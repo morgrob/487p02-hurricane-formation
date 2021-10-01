@@ -1,0 +1,37 @@
+body {
+  padding-top: 5rem;
+  background-color: #272727;
+  color: white;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+  overflow-y: hidden;
+}
+a {
+  text-decoration: none;
+}
+.starter-template {
+  padding: 3rem 1.5rem;
+  text-align: center;
+}
+nav {
+  background-color: #1C1C1C;
+  display: flex !important;
+  justify-content: space-between !important;
+}
+.navbar-brand {
+  color: white;
+  font-weight: 700;
+}
+.navbar-brand:hover {
+  color: #0076FF;
+}
+.author {
+  font-size: 1.2em;
+  margin-top: 15px;
+}
+.author i {
+  margin-left: 15px;
+}
+.author i:hover {
+  color: #0076FF;
+  cursor: pointer;
+}
