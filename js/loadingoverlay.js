@@ -29,7 +29,7 @@ LoadingOverlay - A flexible loading overlay jQuery plugin
         imageAnimation          : "2000ms rotate_right",
         imageAutoResize         : true,
         imageResizeFactor       : 1,
-        imageColor              : "#fff",
+        imageColor              : "#0076FF",
         imageClass              : "",
         imageOrder              : 1,
         // Font Awesome

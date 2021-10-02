@@ -17,6 +17,7 @@ a {
   display: flex !important;
   justify-content: space-between !important;
   height: 60px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 .navbar-brand {
   color: white;
@@ -31,9 +32,10 @@ a {
 }
 #info {
   transition: 0.2s ease-in-out;
+  color: #0076FF;
 }
 #info:hover {
-  color: #0076FF;
+  color: #004CA5;
   cursor: pointer;
 }
 #home {
