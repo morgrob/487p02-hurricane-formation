@@ -1,7 +1,6 @@
 body {
   padding-top: 5rem;
   background-color: #1d1d1d;
-  color: white;
   font-family: 'M PLUS Rounded 1c', sans-serif;
   /* overflow-y: hidden; */
 }
@@ -14,6 +13,7 @@ a {
 }
 .navbar {
   background-color: #131313;
+  color: white;
   display: flex !important;
   justify-content: space-between !important;
   height: 60px;
@@ -23,37 +23,32 @@ a {
   font-weight: 700;
 }
 .navbar-brand:hover {
-  color: #0076FF;
+  color: #fff;
 }
 .author {
   font-size: 1.2em;
   margin-top: 15px;
 }
-.author i {
-  margin-left: 15px;
+#info {
+  transition: 0.2s ease-in-out;
 }
-.author i:hover {
+#info:hover {
   color: #0076FF;
   cursor: pointer;
 }
-.col-md-4 {
+#home {
+  border-radius: 0px !important;
+  background-color: transparent !important;
+}
+.col-md-4, .col-md-6 {
   background-color: rgba(0,0,0,0.6);
   padding: 40px;
-  border-radius: 20px;
 }
-#begin-btn {
-  font-size: 1.5em;
-  padding: 0.5em 3em;
-  margin-top: 10px;
-  border-radius: 100px;
-  background: #0076FF;
-  border: none;
-  color: white;
-  transition: 0.2s ease-in-out;
+.col-md-6 {
+  border-radius: 20px 0px 0px 20px;
 }
-#begin-btn:hover {
-  background: #004CA5;
-  cursor: pointer;
+.col-md-4 {
+  border-radius: 0px 20px 20px 0px;
 }
 .p-text {
   font-size: 1.25em;
@@ -87,4 +82,6 @@ th {
 #level-5 {
   background-color: rgb(255, 49, 49);
 }
-
+.slide {
+  color: white;
+}

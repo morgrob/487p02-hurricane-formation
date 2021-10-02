@@ -69,6 +69,7 @@ $('#quiz').quiz({
 //   End quiz plugin JS
 });
 
+//  Activating slider plugin
 
 $(document).ready(function() {
 	$('#fullpage').fullpage({
@@ -80,9 +81,49 @@ $(document).ready(function() {
 	//methods
 	$.fn.fullpage.setAllowScrolling(true);
 
-    // document.querySelector('.fp-controlArrow.fp-prev').innerHTML = '<h1 class="slider-arrow"><i class="fas fa-chevron-left"></i></h1>'
-
-    // document.querySelector('.fp-controlArrow.fp-next').innerHTML = '<h1 class="slider-arrow"><i class="fas fa-chevron-right"></i></h1>'
-
-
 });
+
+//  End slider plugin JS
+
+//  Activating modal plugin
+
+var modal = new jBox('<a href="https://www.jqueryscript.net/tags.php?/Modal/">Modal</a>', {
+  attach: $('#myModal'),
+  width: 550,
+  overlay: false,
+  repositionOnOpen: false,
+  repositionOnContent: false,
+  target: $('#target'),
+});
+modal.setContent($('#modal-content').html());
+
+//  End modal plugin JS
+
+//  Activating loading screen plugin
+
+$.LoadingOverlay("show");
+
+setTimeout(function(){
+    $.LoadingOverlay("hide");
+}, 3000);
+
+//  End loading screen JS
+
+
+var button = document.getElementById("info");
+
+button.addEventListener('click', function() {
+    const icon = this.querySelector('i');
+  
+    // If the class name of the icon contains fa-info-circle (the name of the icon from FontAwesome), change it to fa-times-circle when the 
+    // user clicks it. 
+    if (icon.classList.contains('fa-info-circle')) {
+        icon.classList.remove('fa-info-circle');
+        icon.classList.add('fa-times-circle');
+    // If the class name of the icon is not fa-info-circle, remove the current name (which would be fa-times-circle since there are only two 
+    // options) and make it fa-info-circle.
+    } else {
+        icon.classList.remove('fa-times-circle');
+        icon.classList.add('fa-info-circle');
+    }
+  });

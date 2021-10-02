@@ -27,14 +27,23 @@
     <!-- Quiz Plugin Stylesheet -->
     <link rel="stylesheet" href="css/jquery.quiz.css">
 
+    <!-- Modal Plugin Stylesheet-->
+    <link href="https://cdn.jsdelivr.net/gh/StephanWagner/jBox@v1.3.3/dist/jBox.all.min.css" rel="stylesheet">
+
     <!-- jQuery Link -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
+    <!-- Slider Plugin JS -->
+    <script type="text/javascript" src="js/fullpage.js"></script>
+    
     <!-- Quiz Plugin JS -->
     <script src="js/jquery.quiz-min.js"></script>
 
-    <!-- Slider Plugin JS -->
-    <script type="text/javascript" src="js/fullpage.js"></script>
+    <!-- Modal Plugin JS -->
+    <script src="https://cdn.jsdelivr.net/gh/StephanWagner/jBox@v1.3.3/dist/jBox.all.min.js"></script>
+
+    <!-- Loading Overlay jQuery Plugin -->
+    <script type="text/javascript" src="js/loadingoverlay.js"></script>
 
   </head>
 
@@ -44,11 +53,22 @@
 
     <!-- Navigation Bar -->
     <nav class="navbar navbar-expand-md fixed-top">
-      <a class="navbar-brand" href=".">Where Do Hurricanes Come From?</a>
-      <p class="author">Morgan Roberts <i class="fas fa-info-circle"></i></p>
+      <a class="navbar-brand" href="."><img src="./images/navicon.png" alt="Hurricane Icon" style="height: 25px; margin-right: 10px;"> Do Hurricanes Come From?</a>
+      <div id="source-info" style="display: flex; flex-direction: row;"><p class="author">Morgan Roberts <div id="info" style="margin: 15px 0px 0px 20px;"><i id="myModal" class="fas fa-info-circle fa-2x"></i></div></p></div>
     </nav>
     <!-- End Navigation Bar -->
 
+    <div id="modal-content" style="display: none; color: black;">
+      <h5><b>Sources:</b></h5>
+      <ul>
+        <li>Background videos and diagrams - National Geographic</li>
+        <li>All written content - SciJinks</li>
+        <li>Slider jQuery Plugin - Alvaro Trigo</li>
+        <li>Quiz jQuery Plugin - jchamill</li>
+        <li>Modal jQuery Plugin - Stephan Wagner</li>
+        <li>Loading Animation jQuery Plugin - Source</li>
+      </ul>
+    </div>
     <div class="container-fluid">
 
       <!-- jQuery slider plugin from https://github.com/alvarotrigo/fullPage.js -->
@@ -57,8 +77,8 @@
           <div class="slide" data-anchor="slide1">
             <div class="row slide-1-content" style="text-align: center;">
               <div class="col-md-3"></div>
-              <div class="col-md-6">
-                <h1><b>Where Do Hurricanes Come From?</b></h1>
+              <div class="col-md-6" id="home">
+                <h1 id="target"><b>Where Do Hurricanes Come From?</b></h1>
                 <p class="p-text" style="text-align: left;">
                   A hurricane is a severe type of tropical storm that produces high winds, 
                   heavy rains and thunderstorms. Hurricanes can cause tremendous damage, with 
@@ -66,12 +86,13 @@
                   can destroy buildings, roads and bridges, knock down power lines and trees, 
                   and so much more. But, how do these destructive storms develop?
                 </p>
-                <button id="begin-btn"><b>BEGIN</b></button>
+                <h5 style="margin-top: 25px;"><b>Click the arrow on the right to begin!</b></h5>
+                <!-- <a href="#slide2"><button id="begin-btn"><b>BEGIN</b></button></a> -->
               </div>
               <div class="col-md-3"></div>
             </div>
           </div>
-          <div class="slide" data-anchor="slide2">
+          <div class="slide" id="slide2" data-anchor="slide2">
             <div class="row slide2content">
               <div class="col-md-1"></div>
                 <div class="col-md-6">image here</div>
@@ -161,8 +182,8 @@
                   lots of wind damage before they die out completely.
                 </p>
                 <p class="p-text">
-                  Finally, the severity of a hurricane is determined by one of five categories based on wind speed and 
-                  projected damage it will cause on land.
+                  Finally, the severity of a hurricane is determined by one of five categories in the Saffir-Simpson scale, 
+                  which is based on wind speed and projected damage the hurricane will cause on land.
                 </p>
                 <!-- <img src="images/hurricane-categories.jpeg" alt="Hurricane Categories Table" style="width: 100%;"> -->
                 <table>
