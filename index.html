@@ -21,12 +21,20 @@
     <!-- Custom styles for Bootstrap template -->
     <link href="css/styles.css" rel="stylesheet">
 
-    <!-- Quiz Stylesheet -->
+    <!-- Slider Plugin Stylesheet -->
+    <link rel="stylesheet" type="text/css" href="css/fullpage.css" />
+
+    <!-- Quiz Plugin Stylesheet -->
     <link rel="stylesheet" href="css/jquery.quiz.css">
 
-    <!-- Quiz Plugin JavaSCript -->
+    <!-- jQuery Link -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Quiz Plugin JS -->
     <script src="js/jquery.quiz-min.js"></script>
+
+    <!-- Slider Plugin JS -->
+    <script type="text/javascript" src="js/fullpage.js"></script>
 
   </head>
 
@@ -36,25 +44,180 @@
 
     <!-- Navigation Bar -->
     <nav class="navbar navbar-expand-md fixed-top">
-      <a class="navbar-brand" href="#">Where Do Hurricanes Come From?</a>
+      <a class="navbar-brand" href=".">Where Do Hurricanes Come From?</a>
       <p class="author">Morgan Roberts <i class="fas fa-info-circle"></i></p>
     </nav>
     <!-- End Navigation Bar -->
 
     <div class="container-fluid">
 
-      <h1>slider here</h1>
-
-      <!-- jQuery quiz plugin from https://github.com/jchamill/jquery-quiz -->
-      <div id="quiz">
-        <div id="quiz-header">
-          <h1><b>What Did You Learn?</b></h1>
-        </div>
-        <div id="quiz-start-screen">
-          <p><a href="#" id="quiz-start-btn" class="quiz-button"><b>START QUIZ</b></a></p>
+      <!-- jQuery slider plugin from https://github.com/alvarotrigo/fullPage.js -->
+      <div id="fullpage">
+        <div class="section">
+          <div class="slide" data-anchor="slide1">
+            <div class="row slide-1-content" style="text-align: center;">
+              <div class="col-md-3"></div>
+              <div class="col-md-6">
+                <h1><b>Where Do Hurricanes Come From?</b></h1>
+                <p class="p-text" style="text-align: left;">
+                  A hurricane is a severe type of tropical storm that produces high winds, 
+                  heavy rains and thunderstorms. Hurricanes can cause tremendous damage, with 
+                  winds sometimes exceeding 155 miles per hour. The high winds and heavy rains 
+                  can destroy buildings, roads and bridges, knock down power lines and trees, 
+                  and so much more. But, how do these destructive storms develop?
+                </p>
+                <button id="begin-btn"><b>BEGIN</b></button>
+              </div>
+              <div class="col-md-3"></div>
+            </div>
+          </div>
+          <div class="slide" data-anchor="slide2">
+            <div class="row slide2content">
+              <div class="col-md-1"></div>
+                <div class="col-md-6">image here</div>
+                <div class="col-md-4">
+                  <p class="p-text">
+                    Meteorologists have divided the development of a tropical cyclone into four 
+                    stages: Tropical disturbance, tropical depression, tropical storm, and full-
+                    fledged tropical cyclone.
+                  </p>
+                  <h2><b>1. Tropical Disturbance</b></h2>
+                  <p class="p-text">
+                    When the water vapor from the warm ocean condenses to form clouds, it releases 
+                    its heat to the air. The warmed air rises and is pulled into the column of clouds. 
+                    Evaporation and condensation continue, building the cloud columns higher and larger. 
+                    A pattern develops, with the wind circulating around a center (like water going down 
+                    a drain). As the moving column of air encounters more clouds, it becomes a cluster 
+                    of thunderstorm clouds, called a tropical disturbance.
+                  </p>
+                </div>
+              <div class="col-md-1"></div>
+            </div>
+          </div>
+          <div class="slide" data-anchor="slide3">
+            <div class="row slide3content">
+              <div class="col-md-1"></div>
+                <div class="col-md-6">image here</div>
+                <div class="col-md-4">
+                  <h2><b>2. Tropical Depression</b></h2>
+                  <p class="p-text">
+                    As the thunderstorm grows higher and larger, the air at the top of the cloud column is 
+                    cooling and becoming unstable. As the heat energy is released from the cooling water 
+                    vapor, the air at the top of the clouds becomes warmer, making the air pressure higher 
+                    and causing winds to move outward away from the high pressure area. This movement and 
+                    warming causes pressures at the surface to drop. Then air at the surface moves toward 
+                    the lower pressure area, rises, and creates more thunderstorms. Winds in the storm cloud 
+                    column spin faster and faster, whipping around in a circular motion. When the winds reach 
+                    between 25 and 38 mph, the storm is called a tropical depression.
+                  </p>
+                </div>
+              <div class="col-md-1"></div>
+            </div>
+          </div>
+          <div class="slide" data-anchor="slide4">
+            <div class="row slide4content">
+              <div class="col-md-1"></div>
+                <div class="col-md-6">image here</div>
+                <div class="col-md-4">
+                  <h2><b>3. Tropical Storm</b></h2>
+                  <p class="p-text">
+                    When the wind speeds reach 39 mph, the tropical depression becomes a tropical storm. This is 
+                    also when the storm gets a name. The winds blow faster and begin twisting and turning around 
+                    the eye, or calm center, of the storm. Wind direction is counterclockwise (west to east) in 
+                    the northern hemisphere and clockwise (east to west) in the southern hemisphere. This phenomenon 
+                    is known as the Coriolis effect.
+                  </p>
+                </div>
+              <div class="col-md-1"></div>
+            </div>
+          </div>
+          <div class="slide" data-anchor="slide5">
+            <div class="row slide5content">
+              <div class="col-md-1"></div>
+                <div class="col-md-6">image here</div>
+                <div class="col-md-4">
+                  <h2><b>4. Hurricane</b></h2>
+                  <p class="p-text">
+                    When the wind speeds reach 74 mph, the storm is officially a hurricane. The storm is at least 50,000 
+                    feet high and around 125 miles across. The eye is around 5 to 30 miles wide. The trade winds (which 
+                    blow from east to west) push the hurricane toward the west—toward the Caribbean, the Gulf of Mexico, 
+                    or the southeastern coast of the U.S. The winds and the low air pressure also cause a huge mound of 
+                    ocean water to pile up near the eye of the hurricane, which can cause monster storm surges when all 
+                    this water reaches land.
+                  </p>
+                </div>
+              <div class="col-md-1"></div>
+            </div>
+          </div>
+          <div class="slide" data-anchor="slide6">
+            <div class="row slide6content">
+              <div class="col-md-1"></div>
+              <div class="col-md-6">image here</div>
+              <div class="col-md-4">
+                <h2><b>What Happens Next?</b></h2>
+                <p class="p-text">
+                  Hurricanes usually weaken when they hit land, because they are no longer being fed by the energy from 
+                  the warm ocean waters. However, they often move far inland, dumping many inches of rain and causing 
+                  lots of wind damage before they die out completely.
+                </p>
+                <p class="p-text">
+                  Finally, the severity of a hurricane is determined by one of five categories based on wind speed and 
+                  projected damage it will cause on land.
+                </p>
+                <!-- <img src="images/hurricane-categories.jpeg" alt="Hurricane Categories Table" style="width: 100%;"> -->
+                <table>
+                  <tr>
+                    <th>Category</th>
+                    <th>Wind Speed (mph)</th>
+                    <th>Damage at Landfall</th>
+                  </tr>
+                  <tr id="level-1">
+                    <td>1</td>
+                    <td>74-95</td>
+                    <td>Minimal</td>
+                  </tr>
+                  <tr id="level-2">
+                    <td>2</td>
+                    <td>96-110</td>
+                    <td>Extensive</td>
+                  </tr>
+                  <tr id="level-3">
+                    <td>3</td>
+                    <td>111-129</td>
+                    <td>Devastating</td>
+                  </tr>
+                  <tr id="level-4">
+                    <td>4</td>
+                    <td>130-156</td>
+                    <td>Catastrophic</td>
+                  </tr>
+                  <tr id="level-5">
+                    <td>5</td>
+                    <td>157+</td>
+                    <td>Catastrophic</td>
+                  </tr>
+                </table>
+              </div>
+              <div class="col-md-1"></div>
+            </div>
+          </div>
+          <div class="slide" data-anchor="slide7">
+            <!-- jQuery quiz plugin from https://github.com/jchamill/jquery-quiz -->
+            <div id="quiz">
+              <div id="quiz-header">
+                <h1><b>What Did You Learn?</b></h1>
+              </div>
+              <div id="quiz-start-screen">
+                <p><a href="#" id="quiz-start-btn" class="quiz-button"><b>START QUIZ</b></a></p>
+              </div>
+            </div>
+            <!-- End quiz plugin HTML -->
+          </div>
         </div>
       </div>
-      <!-- End quiz plugin -->
+      <!-- End slider plugin HTML -->
+
+      
 
     </div><!-- /.container-fluid -->
 

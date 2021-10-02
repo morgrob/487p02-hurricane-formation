@@ -66,6 +66,23 @@ $('#quiz').quiz({
       }
     ]
   });
-//   End quiz plugin
+//   End quiz plugin JS
+});
+
+
+$(document).ready(function() {
+	$('#fullpage').fullpage({
+		//options here
+		autoScrolling:true,
+		scrollHorizontally: true
+	});
+
+	//methods
+	$.fn.fullpage.setAllowScrolling(true);
+
+    // document.querySelector('.fp-controlArrow.fp-prev').innerHTML = '<h1 class="slider-arrow"><i class="fas fa-chevron-left"></i></h1>'
+
+    // document.querySelector('.fp-controlArrow.fp-next').innerHTML = '<h1 class="slider-arrow"><i class="fas fa-chevron-right"></i></h1>'
+
 
 });

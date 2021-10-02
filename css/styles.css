@@ -1,6 +1,6 @@
 body {
   padding-top: 5rem;
-  background-color: #272727;
+  background-color: #1d1d1d;
   color: white;
   font-family: 'M PLUS Rounded 1c', sans-serif;
   /* overflow-y: hidden; */
@@ -13,7 +13,7 @@ a {
   text-align: center;
 }
 .navbar {
-  background-color: #1C1C1C;
+  background-color: #131313;
   display: flex !important;
   justify-content: space-between !important;
   height: 60px;
@@ -35,5 +35,56 @@ a {
 .author i:hover {
   color: #0076FF;
   cursor: pointer;
+}
+.col-md-4 {
+  background-color: rgba(0,0,0,0.6);
+  padding: 40px;
+  border-radius: 20px;
+}
+#begin-btn {
+  font-size: 1.5em;
+  padding: 0.5em 3em;
+  margin-top: 10px;
+  border-radius: 100px;
+  background: #0076FF;
+  border: none;
+  color: white;
+  transition: 0.2s ease-in-out;
+}
+#begin-btn:hover {
+  background: #004CA5;
+  cursor: pointer;
+}
+.p-text {
+  font-size: 1.25em;
+  margin: 15px 0px;
+}
+table {
+  width: 100%;
+  font-size: 1.25em;
+  text-align: center;
+  color: black;
+  margin-top: 20px;
+}
+th, td {
+  padding: 5px;
+}
+th {
+  background-color: rgb(177, 177, 177);
+}
+#level-1 {
+  background-color: rgb(96, 202, 96);
+}
+#level-2 {
+  background-color: rgb(255, 255, 121);
+}
+#level-3 {
+  background-color: rgb(255, 175, 101);
+}
+#level-4 {
+  background-color: rgb(255, 96, 38);
+}
+#level-5 {
+  background-color: rgb(255, 49, 49);
 }
 
