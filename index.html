@@ -6,7 +6,9 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="icon" href="images/hurricane-vector.png">
+    <!-- Importing FontAwesome Icons  -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <!-- Importing M-PLUS Rounded Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@300;400;700&display=swap" rel="stylesheet">
@@ -16,31 +18,52 @@
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Custom styles for this template -->
+    <!-- Custom styles for Bootstrap template -->
     <link href="css/styles.css" rel="stylesheet">
+
+    <!-- Quiz Stylesheet -->
+    <link rel="stylesheet" href="css/jquery.quiz.css">
+
+    <!-- Quiz Plugin JavaSCript -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/jquery.quiz-min.js"></script>
+
   </head>
 
   <body>
 
     <!-- <div id="spin"></div> -->
 
+    <!-- Navigation Bar -->
     <nav class="navbar navbar-expand-md fixed-top">
       <a class="navbar-brand" href="#">Where Do Hurricanes Come From?</a>
       <p class="author">Morgan Roberts <i class="fas fa-info-circle"></i></p>
     </nav>
+    <!-- End Navigation Bar -->
 
-    <main role="main" class="container-fluid">
+    <div class="container-fluid">
 
-      
+      <h1>slider here</h1>
 
-    </main><!-- /.container -->
+      <!-- jQuery quiz plugin from https://github.com/jchamill/jquery-quiz -->
+      <div id="quiz">
+        <div id="quiz-header">
+          <h1><b>What Did You Learn?</b></h1>
+        </div>
+        <div id="quiz-start-screen">
+          <p><a href="#" id="quiz-start-btn" class="quiz-button"><b>START QUIZ</b></a></p>
+        </div>
+      </div>
+      <!-- End quiz plugin -->
+
+    </div><!-- /.container-fluid -->
+
+
+    <script src="js/main.js"></script>
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script> -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    <!-- <script src="../../../../assets/js/vendor/popper.min.js"></script>
-    <script src="../../../../dist/js/bootstrap.min.js"></script> -->
+    
   </body>
 </html>

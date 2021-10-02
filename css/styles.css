@@ -3,7 +3,7 @@ body {
   background-color: #272727;
   color: white;
   font-family: 'M PLUS Rounded 1c', sans-serif;
-  overflow-y: hidden;
+  /* overflow-y: hidden; */
 }
 a {
   text-decoration: none;
@@ -12,10 +12,11 @@ a {
   padding: 3rem 1.5rem;
   text-align: center;
 }
-nav {
+.navbar {
   background-color: #1C1C1C;
   display: flex !important;
   justify-content: space-between !important;
+  height: 60px;
 }
 .navbar-brand {
   color: white;
@@ -35,3 +36,4 @@ nav {
   color: #0076FF;
   cursor: pointer;
 }
+
