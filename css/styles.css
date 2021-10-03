@@ -1,6 +1,6 @@
 body {
   padding-top: 5rem;
-  background-color: #1d1d1d;
+  background-color: #131313;
   font-family: 'M PLUS Rounded 1c', sans-serif;
   /* overflow-y: hidden; */
 }
@@ -39,11 +39,13 @@ a {
   cursor: pointer;
 }
 #home {
-  border-radius: 0px !important;
-  background-color: transparent !important;
+  border-radius: 20px !important;
+}
+#home h5 {
+  color: #0076FF;
 }
 .col-md-4, .col-md-6 {
-  background-color: rgba(0,0,0,0.6);
+  background-color: rgba(0, 0, 0, 0.7);
   padding: 40px;
 }
 .col-md-6 {
