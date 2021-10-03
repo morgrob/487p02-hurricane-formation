@@ -27,7 +27,7 @@ a {
   color: #fff;
 }
 .author {
-  font-size: 12pt;
+  font-size: 10pt;
   margin-top: 15px;
 }
 #info {
@@ -59,12 +59,12 @@ a {
   border-radius: 0px 20px 20px 0px;
 }
 .p-text {
-  font-size: 14pt;
+  font-size: 12pt;
   margin: 15px 0px;
 }
 table {
   width: 100%;
-  font-size: 14pt;
+  font-size: 12pt;
   text-align: center;
   color: black;
   margin-top: 20px;
