@@ -2,8 +2,9 @@
     padding: 3em;
     max-width: 700px;
     margin: 1em auto;
-    background: #131313;
+    background: #1d1d1d;
     border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 5px 15px;
 }
 
 .quiz-container a {
