@@ -20,7 +20,7 @@
 }
 
 .question {
-    font-size: 1.5em;
+    font-size: 16pt;
     color: white;
 }
 
@@ -35,7 +35,7 @@
     margin-bottom: 0.8em;
     background: #272727;
     border-radius: 10px;
-    font-size: 1.2em;
+    font-size: 14pt;
 }
 .answers a:hover {
     background: #444;
@@ -73,7 +73,7 @@
     background: #0076FF;
     color: #fff;
     border-radius: 100px;
-    font-size: 1.3em;
+    font-size: 14pt;
 }
 #quiz-start-btn {
     margin-top: 20px;
